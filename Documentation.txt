@@ -1,0 +1,18 @@
+For Task 1:
+
+How to run the Program :
+A. Compile using javac *.java
+B. Open a Terminal -> Run Server.java 
+C. Open two other Terminals -> Run 2 Client.java
+
+How it works [Server] :
+1. Main creates an object of type Server.
+2. Server starts an incoming socket to port 8000
+3. Then the Server will start accepting Connections in a loop (From multiple Clients)
+4. Inside the Server Constructor -> It creates an Object of type AcceptClient.
+5. AcceptClient creates an Input and output Stream for the Socket and Adds the opened connection in Vector ClientSocket.
+
+How it works [Client] :
+1. Main creates an object of type Client.
+2. Client connects to port 8000.
+3. In the while loop it accepts the Name of the Person and Send and Recieve Messages.
